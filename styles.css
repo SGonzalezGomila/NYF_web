@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+span {
+    color: rgba(255, 138, 0, 1)
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 78%, rgba(255, 138, 0, 1) 100%)
+}
+
+h2,
+h1 {
+    font-size: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-size: 100px;
+    /* Tamaño grande para todos los títulos */
+    color: white;
+    /* Mantén el color blanco para todos los títulos */
+    font-family: "Anton SC", serif;
+    /* Usando la fuente deseada para los títulos */
+    font-weight: 400;
+    text-align: center;
+    /* Centrado de los títulos */
+}
+
+/* @keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%
+    }
+}
+
+h2,
+h3,
+img {
+    view-timeline-name: --h2;
+    view-timeline-axis: block;
+
+    animation-timeline: --h2;
+    animation-name: show;
+} */
+
+button:hover {
+    background-color: rgba(255, 138, 0, 1);
+}
+
+p,
+ul,
+li {
+    font-family: "Roboto Condensed", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: white;
+
+}
+
+h2,
+h1 {
+    font-family: "Anton SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+
+
+}
+
+
+
+
+#campus {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url("./assets/img/fondos/DIA\ 1\ NYF\ -\ 234.jpg") no-repeat center center;
+    background-size: cover;
+    /* Asegura que la imagen cubra toda la sección */
+    width: 100%;
+    min-height: 100vh;
+    /* La sección ocupará al menos toda la altura de la ventana */
+}
+
+/* Esta parte asegura que la sección tenga suficiente espacio para cubrir hasta el siguiente bloque */
+.campus {
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 0;
+}
+
+.campus h1 {
+
+    margin-bottom: 20px;
+    color: white;
+    font-size: 4rem;
+
+}
+
+.campus h2 {
+    color: black;
+}
+
+/* Elimina el margen superior, asegurando que no haya espacio vacío entre el fondo y el contenido */
+.campus_wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ajustes de estilo de las tarjetas */
+.campus_item {
+    background: linear-gradient(180deg, rgba(97, 97, 97, 1) 0%, rgba(255, 255, 255, 1) 14%, rgba(212, 210, 210, 1) 100%);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+    width: 370px;
+
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 200px
+}
+
+.campus_item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.campus_item h2 {
+
+    margin: 15px 0;
+    font-weight: bold;
+    margin-top: 600px;
+    color: black;
+}
+
+.campus_item button {
+    background-color: rgba(255, 138, 0, 1) !important;
+}
+
+.campus_item h3 {
+    color: black;
+    font-weight: bold;
+}
+
+.campus_item p {
+    background-color: #4a3c2f;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.campus_item button {
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    color: white;
+}
+
+
+.campus_item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+
+
+.campus_item h2 {
+
+    margin: 15px 0;
+    font-weight: bold;
+    color: black;
+    letter-spacing: 1px
+}
+
+.campus_item h3 {
+    color: black;
+    font-weight: bold;
+}
+
+.campus_item p {
+    background-color: #4a3c2f;
+    /* Fondo oscuro */
+    color: #ffffff;
+    /* Texto blanco */
+    padding: 5px 10px;
+    /* Espaciado para destacar */
+    border-radius: 5px;
+    /* Bordes redondeados para estética */
+}
+
+.campus_item button {
+    background-color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+    color: white;
+}
+
+
+#sobre-nosotros {
+    background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
+        url("./assets/img/fondos/NYFCHILE-187.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 10px;
+    /* La sección ocupará al menos toda la altura de la ventana */
+}
+
+.section {
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    width: 100%;
+    /* Elimina el max-width para que ocupe todo el ancho de la pantalla */
+}
+
+.sobre-nosotros h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    margin-top: 100px;
+    color: white;
+}
+
+.sobre-nosotros p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.valores-metodologia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.nuestros-valores {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+    width: 100%;
+    /* Asegura que las columnas ocupen el 100% del ancho */
+}
+
+.valores,
+.metodologia {
+    width: 300px;
+    height: 200px;
+    /* Mantiene las columnas con un 45% del ancho disponible */
+    text-align: left;
+    border: 1px solid rgba(255, 138, 0, 1);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+.valores h2,
+.metodologia h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: white;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    line-height: 1.5;
+}
+
+li {
+    font-size: 1rem;
+    color: white;
+}
+
+li::marker {
+    color: rgba(255, 138, 0, 1);
+}
+
+.nuestros-campus-wrapper {
+    max-width: calc(100% - 100px);
+    max-height: calc(100% - 100px);
+    /* Deja 50px de margen a cada lado */
+    margin: 0 auto;
+    margin-top: 50px;
+    /* Ajusta la distancia desde el top según sea necesario */
+}
+
+.nuestros-campus-wrapper h2 {
+    color: white;
+    margin-bottom: 20px;
+    margin-bottom: 50px;
+    font-size: 4rem;
+    /* Ajusta el margen inferior para dar espacio entre el carrusel y el siguiente título */
+}
+
+.carousel-inner img {
+    height: 700px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.carousel-inner button {
+    border-radius: 5px;
+}
+
+.carousel-inner h5 {
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 78%, rgba(255, 138, 0, 1) 100%);
+    padding: 5px 1px;
+    max-width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    margin-left: 180px;
+}
+
+.carousel-caption {
+    font-size: 0.9rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.player-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten en múltiples líneas */
+    padding: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-card {
+    width: calc(20% - 20px);
+    /* Hace que cada tarjeta ocupe 1/3 del ancho (con margen incluido) */
+    margin: 10px;
+    /* Margen entre los elementos */
+    box-sizing: border-box;
+    /* Asegura que el padding no se agregue al tamaño total */
+    text-align: center;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 78%, rgba(127, 127, 127, 1) 100%);
+    /* Fondo blanco para simular el Polaroid */
+    padding-bottom: 20px;
+    /* Espacio extra para la parte blanca inferior */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Sombra para el efecto flotante */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    overflow: hidden;
+    /* Asegura que todo se quede dentro de la tarjeta */
+}
+
+.player-card img {
+    width: 100%;
+    /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto;
+    border-bottom: 10px solid white;
+    /* Borde blanco entre la imagen y el texto */
+}
+
+.player-card h3 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.player-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.player-card:hover {
+    transform: scale(1.05);
+    /* Aumenta ligeramente el tamaño de la tarjeta al pasar el ratón */
+    transition: transform 0.3s ease;
+}
+
+.section h1 {
+    color: white;
+    font-size: 4rem;
+}
+
+
+
+
+
+.campus-contador {
+    height: 20px;
+    width: 20px;
+    position: relative;
+}
+
+.color_fondo {
+    height: 0;
+    width: 100%;
+    background-color: rgba(255, 138, 0, 1);
+}
+
+.numero {
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(255, 138, 0, 1);
+    background-color: white;
+    position: absolute;
+    mix-blend-mode: screen;
+    border-radius: 1px solid black;
+}
